@@ -3,7 +3,7 @@ import Link from "next/link";
 import Input from "./components/Input";
 
 async function getData(query: string) {
-  const res = await fetch(`http://127.0.0.1:5328/api/chat/${query}`);
+  const res = await fetch(`/api/chat/${query}`);
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
 
